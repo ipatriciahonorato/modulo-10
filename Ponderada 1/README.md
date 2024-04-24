@@ -61,5 +61,46 @@ Este comando inicia o servidor de desenvolvimento local em http://localhost:5000
 - Atualização de Tarefas: Permite alterar detalhes de uma tarefa específica.
 - Exclusão de Tarefas: Permite excluir uma tarefa específica.
 
-### Testando a API com Insomnia
+## Insomnia Collection
+
+### Área de trabalho
+Nome: Flask App API
+Descrição: Esta área de trabalho contém todos os endpoints da API definidos na aplicação Flask.
+Variáveis de Ambiente
+Ambiente Base: Define a variável base_url que é usada como a URL base para todas as requisições da API.
+base_url - URL base da API, definida por padrão como http://localhost:5000
+
+### Pastas e Requisições
+1. Hello World
+GET /: Retorna uma simples mensagem de Hello World.
+2. Usuários (Pasta)
+GET /users: Recupera todos os usuários.
+GET /users/{user_id}: Recupera um único usuário pelo ID.
+POST /users: Cria um novo usuário. Requer corpo JSON com name, email e password.
+PUT /users/{user_id}: Atualiza um usuário existente identificado por ID. Requer corpo JSON com name, email e password.
+DELETE /users/{user_id}: Deleta um usuário identificado por ID.
+3. Autenticação (Pasta)
+POST /token: Gera um token de autenticação. Requer corpo JSON com username e password.
+POST /login: Simula um processo de login, gerando um token de autenticação se bem-sucedido.
+POST /register: Trata do registro de usuários. Requer dados de formulário com username e password.
+4. Tarefas (Pasta)
+POST /tasks: Cria uma nova tarefa para o usuário autenticado. Requer corpo JSON com title e, opcionalmente, description.
+GET /tasks/view: Recupera todas as tarefas associadas ao usuário autenticado.
+PUT /tasks/{task_id}: Atualiza uma tarefa específica pelo ID. Requer corpo JSON com propriedades da tarefa para atualizar.
+DELETE /tasks/{task_id}: Deleta uma tarefa específica pelo ID.
+
+### Importação e Uso
+Importando: Para importar esta coleção no Insomnia:
+Vá até 'Dashboard'
+Clique em 'Importar/Exportar'
+Escolha 'Importar Dados' e depois 'De Arquivo'
+Selecione o arquivo JSON onde esses dados estão salvos.
+Usando Variáveis:
+Certifique-se de substituir os placeholders na URL ou corpo JSON com valores reais baseados em seu cenário de teste.
+Use o trocador de ambiente para mudar base_url se estiver testando em diferentes ambientes.
+
+### Atualizando a Coleção
+Para atualizar ou personalizar esta coleção, adicione ou modifique requisições ou ambientes diretamente dentro do Insomnia.
+
+
 
