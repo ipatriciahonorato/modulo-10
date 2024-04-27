@@ -14,7 +14,7 @@ services:
       - JWT_SECRET_KEY=your_secret_key
     volumes:
       - ./src:/app
-      - ./templates:/app/templates
+      - ./src/templates:/app/templates
 
   db:
     image: postgres:13

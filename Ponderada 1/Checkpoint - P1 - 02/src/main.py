@@ -34,6 +34,8 @@ if __name__ == "__main__":
     else:
         app.run()
         
+create_database()
+
 @app.route("/")
 def hello_world():
     return "<p>Hello, World!</p>"
