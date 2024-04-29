@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+databases
+asyncpg
+aiosqlite
+python-jose[cryptography]==3.3.0
+python-multipart
+jinja2
