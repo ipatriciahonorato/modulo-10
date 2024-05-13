@@ -1,6 +1,0 @@
-flask
-Flask-SQLAlchemy
-Flask-JWT-Extended
-requests
-Flask-WTF
-psycopg2-binary

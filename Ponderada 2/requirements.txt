@@ -1,0 +1,6 @@
+flask
+Flask-SQLAlchemy
+requests
+Flask-WTF
+psycopg2-binary
+asyncpg
