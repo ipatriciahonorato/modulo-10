@@ -59,5 +59,5 @@ docker run -p 5000:5000 todo-api
 
 # 5. Vídeo Demonstrativo
 
-![A demonstração do projeto pode ser vista nesse link](https://www.youtube.com/watch?v=AOzgwANrYy8)
+[![video demostrativo da solução](https://img.youtube.com/vi/AOzgwANrYy8/0.jpg)](https://www.youtube.com/shorts/AOzgwANrYy8)
 
