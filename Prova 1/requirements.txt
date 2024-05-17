@@ -1,0 +1,5 @@
+flask
+requests
+Flask-WTF
+psycopg2-binary
+asyncpg

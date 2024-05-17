@@ -28,3 +28,6 @@ EXPOSE 5000
 
 # Comando para rodar o aplicativo
 CMD ["flask", "run", "--host=0.0.0.0"]
+
+
+

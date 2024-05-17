@@ -1,0 +1,235 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2024-05-17T00:51:00.482Z",
+    "__export_source": "insomnia.desktop.app:v2023.1.0",
+    "resources": [
+      {
+        "_id": "wrk_a26b5d4fb56748fa808d6850fa8ef4ff",
+        "parentId": null,
+        "modified": 1713919183279,
+        "created": 1713919183279,
+        "name": "Prova 1",
+        "description": "",
+        "scope": "collection",
+        "_type": "workspace"
+      },
+      {
+        "_id": "env_0f125e0a91f66b764605ad4a00a4921958352711",
+        "parentId": "wrk_a26b5d4fb56748fa808d6850fa8ef4ff",
+        "modified": 1713919616254,
+        "created": 1713919183282,
+        "name": "Base Environment",
+        "data": {
+          "base_url": "http://localhost:5001"
+        },
+        "dataPropertyOrder": {
+          "&": [
+            "base_url"
+          ]
+        },
+        "color": null,
+        "isPrivate": false,
+        "metaSortKey": 1713919183282,
+        "_type": "environment"
+      },
+      {
+        "_id": "req_7694e55d60b542b98db3617bf25892b7",
+        "parentId": "wrk_a26b5d4fb56748fa808d6850fa8ef4ff",
+        "modified": 1713919541695,
+        "created": 1713919541695,
+        "url": "{{ base_url }}/",
+        "name": "Hello World",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [],
+        "authentication": {},
+        "metaSortKey": -1713919541695,
+        "isPrivate": false,
+        "pathParameters": [],
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "fld_4900090c0930415ea89271fc830701e0",
+        "parentId": "wrk_a26b5d4fb56748fa808d6850fa8ef4ff",
+        "modified": 1713919541694,
+        "created": 1713919541694,
+        "name": "Orders",
+        "description": "",
+        "environment": {},
+        "environmentPropertyOrder": null,
+        "metaSortKey": -1713919541694,
+        "_type": "request_group"
+      },
+      {
+        "_id": "req_3102ab2da3754d84a3916cd2e2a7df0f",
+        "parentId": "fld_4900090c0930415ea89271fc830701e0",
+        "modified": 1713919666670,
+        "created": 1713919541697,
+        "url": "{{ base_url }}/novo",
+        "name": "Create Order",
+        "description": "",
+        "method": "POST",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"name\": \"John Doe\",\n  \"email\": \"john.doe@example.com\",\n  \"description\": \"Order description\"\n}"
+        },
+        "parameters": [],
+        "headers": [
+          {
+            "id": "pair_79664e32234c4752aa1e4a90761e93ee",
+            "name": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "authentication": {},
+        "metaSortKey": -1713919541697,
+        "isPrivate": false,
+        "pathParameters": [],
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_b0ffca7c02fa4d26b3ae31cbabbdef65",
+        "parentId": "fld_4900090c0930415ea89271fc830701e0",
+        "modified": 1713919842059,
+        "created": 1713919541695,
+        "url": "{{ base_url }}/pedidos",
+        "name": "Get All Orders",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [
+          {
+            "id": "pair_f7993811b2904de88f36191916224e90",
+            "name": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "authentication": {},
+        "metaSortKey": -1713919541695,
+        "isPrivate": false,
+        "pathParameters": [],
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_e5b2c7b544b841ed998ae7d308e98834",
+        "parentId": "fld_4900090c0930415ea89271fc830701e0",
+        "modified": 1713919799666,
+        "created": 1713919541696,
+        "url": "{{ base_url }}/pedidos/{{ order_id }}",
+        "name": "Get Order",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [
+          {
+            "id": "pair_330d9fc1b1f24f069a21cf076262bf86",
+            "name": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "authentication": {},
+        "metaSortKey": -1713919541696,
+        "isPrivate": false,
+        "pathParameters": [],
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_7823c97895594462a677f4ba619d3e9a",
+        "parentId": "fld_4900090c0930415ea89271fc830701e0",
+        "modified": 1713919821788,
+        "created": 1713919541696,
+        "url": "{{ base_url }}/pedidos/{{ order_id }}",
+        "name": "Update Order",
+        "description": "",
+        "method": "PUT",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"name\": \"John Doe\",\n  \"email\": \"john.doe@example.com\",\n  \"description\": \"Updated order description\"\n}"
+        },
+        "parameters": [],
+        "headers": [
+          {
+            "id": "pair_4f8bc9704fdd42ceb662216a52b08759",
+            "name": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "authentication": {},
+        "metaSortKey": -1713919541696,
+        "isPrivate": false,
+        "pathParameters": [],
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_a6b4a92f2c51493ab09db20223ecc1d3",
+        "parentId": "fld_4900090c0930415ea89271fc830701e0",
+        "modified": 1713919814198,
+        "created": 1713919541696,
+        "url": "{{ base_url }}/pedidos/{{ order_id }}",
+        "name": "Delete Order",
+        "description": "",
+        "method": "DELETE",
+        "body": {},
+        "parameters": [],
+        "headers": [
+          {
+            "id": "pair_614c57f4fa3448439eddad362d437676",
+            "name": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "authentication": {},
+        "metaSortKey": -1713919541696,
+        "isPrivate": false,
+        "pathParameters": [],
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      }
+    ]
+  }  
+  
