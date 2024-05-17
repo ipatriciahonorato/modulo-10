@@ -8,11 +8,11 @@ Este projeto consiste na implementação de uma API RESTful utilizando Flask, qu
 
 ## Funcionalidades
 
-- Cadastro de Pedidos: Permite cadastrar um novo pedido fornecendo nome, e-mail e descrição.
-- Visualização de Pedidos: Permite visualizar todos os pedidos cadastrados.
-- Visualização de Pedido por ID: Permite visualizar um pedido específico utilizando seu ID.
-- Edição de Pedidos: Permite editar os detalhes de um pedido específico utilizando seu ID.
-- Exclusão de Pedidos: Permite excluir um pedido específico utilizando seu ID.
+- Cadastro de Pedidos
+- Visualização de Pedidos
+- Visualização de Pedido por ID
+- Edição de Pedidos
+- Exclusão de Pedidos
 
 # Endpoints da API
 
