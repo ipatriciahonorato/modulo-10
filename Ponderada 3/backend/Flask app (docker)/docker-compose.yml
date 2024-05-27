@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    container_name: backend
+    environment:
+      - FLASK_APP=main.py
+      - FLASK_ENV=development
+      - JWT_SECRET_KEY=goku-vs-vegeta
+      - DATABASE_URL=sqlite:///project.db
+    volumes:
+      - ./src:/app
+    ports:
+      - "5000:5000"
+    expose:
+      - "5000"
+    command: flask run --host=0.0.0.0 --port=5000
