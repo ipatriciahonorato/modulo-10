@@ -120,7 +120,7 @@ O backend utiliza a biblioteca logging para registrar eventos importantes e faci
 # Controller e Serviços
 
 ## Controller
-O controller principal do projeto está localizado em ``backend/controllers/main_controller.py`` e é responsável por definir os endpoints da API e integrar os serviços. Ele inclui endpoints para registro de usuários, autenticação e processamento de imagens.
+O controller principal do projeto está localizado em ``Ponderada 3/backend/Flask app (docker)/src/main_.py`` e é responsável por definir os endpoints da API e integrar os serviços. Ele inclui endpoints para registro de usuários, autenticação e processamento de imagens.
 
 ## Serviços
 Os serviços são responsáveis pela lógica de negócio e estão localizados no diretório backend/services/. Existem dois serviços principais:
