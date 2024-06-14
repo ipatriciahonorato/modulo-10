@@ -1,0 +1,204 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2024-06-14T00:00:00.000Z",
+    "__export_source": "insomnia.desktop.app:v8.6.1",
+    "resources": [
+      {
+        "_id": "req_1234567890abcdef",
+        "parentId": "fld_1234567890abcdef",
+        "modified": 1713919541695,
+        "created": 1713919541695,
+        "url": "{{ base_url }}/blog",
+        "name": "Create Blog Post",
+        "description": "",
+        "method": "POST",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"id\": 1,\n  \"title\": \"First Post\",\n  \"content\": \"This is the content of the first post.\"\n}"
+        },
+        "parameters": [],
+        "headers": [
+          {
+            "id": "pair_79664e32234c4752aa1e4a90761e93ee",
+            "name": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "authentication": {},
+        "metaSortKey": -1713919541695,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_0987654321abcdef",
+        "parentId": "fld_1234567890abcdef",
+        "modified": 1713919541696,
+        "created": 1713919541696,
+        "url": "{{ base_url }}/blog",
+        "name": "Get All Blog Posts",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [
+          {
+            "id": "pair_f7993811b2904de88f36191916224e90",
+            "name": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "authentication": {},
+        "metaSortKey": -1713919541696,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_1122334455667788",
+        "parentId": "fld_1234567890abcdef",
+        "modified": 1713919541697,
+        "created": 1713919541697,
+        "url": "{{ base_url }}/blog/1",
+        "name": "Get Blog Post by ID",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [
+          {
+            "id": "pair_f7993811b2904de88f36191916224e90",
+            "name": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "authentication": {},
+        "metaSortKey": -1713919541697,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_aabbccddeeff0011",
+        "parentId": "fld_1234567890abcdef",
+        "modified": 1713919541698,
+        "created": 1713919541698,
+        "url": "{{ base_url }}/blog/1",
+        "name": "Update Blog Post",
+        "description": "",
+        "method": "PUT",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n  \"title\": \"Updated Post\",\n  \"content\": \"This is the updated content of the post.\"\n}"
+        },
+        "parameters": [],
+        "headers": [
+          {
+            "id": "pair_f7993811b2904de88f36191916224e90",
+            "name": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "authentication": {},
+        "metaSortKey": -1713919541698,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_2233445566778899",
+        "parentId": "fld_1234567890abcdef",
+        "modified": 1713919541699,
+        "created": 1713919541699,
+        "url": "{{ base_url }}/blog/1",
+        "name": "Delete Blog Post",
+        "description": "",
+        "method": "DELETE",
+        "body": {},
+        "parameters": [],
+        "headers": [
+          {
+            "id": "pair_f7993811b2904de88f36191916224e90",
+            "name": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          }
+        ],
+        "authentication": {},
+        "metaSortKey": -1713919541699,
+        "isPrivate": false,
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "wrk_1234567890abcdef",
+        "parentId": null,
+        "modified": 1713919183279,
+        "created": 1713919183279,
+        "name": "FastAPI Blog",
+        "description": "",
+        "scope": "collection",
+        "_type": "workspace"
+      },
+      {
+        "_id": "fld_1234567890abcdef",
+        "parentId": "wrk_1234567890abcdef",
+        "modified": 1713919541693,
+        "created": 1713919541693,
+        "name": "Blog Posts",
+        "description": "",
+        "environment": {},
+        "environmentPropertyOrder": null,
+        "metaSortKey": -1713919541693,
+        "_type": "request_group"
+      },
+      {
+        "_id": "env_0f125e0a91f66b764605ad4a00a4921958352711",
+        "parentId": "wrk_1234567890abcdef",
+        "modified": 1713919616254,
+        "created": 1713919183282,
+        "name": "Base Environment",
+        "data": {
+          "base_url": "http://localhost"
+        },
+        "dataPropertyOrder": {
+          "&": ["base_url"]
+        },
+        "color": null,
+        "isPrivate": false,
+        "metaSortKey": 1713919183282,
+        "_type": "environment"
+      }
+    ]
+  }
+  
