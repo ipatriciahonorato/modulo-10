@@ -20,6 +20,7 @@ Um serviço de logs foi implementado para armazenar todas as ações que acontec
 - Método: POST
 - Corpo da Requisição:
 
+``
 {
     "service": "string",
     "user_id": "string",
@@ -28,21 +29,25 @@ Um serviço de logs foi implementado para armazenar todas as ações que acontec
     "cause": "string",       // opcional
     "timestamp": "datetime"  // opcional, será preenchido automaticamente se não fornecido
 }
+``
 
 ### Serviço de Usuários
 O serviço de usuários foi implementado utilizando FastAPI. Ele oferece endpoints para criação, leitura, atualização e exclusão de usuários. Cada ação realizada pelo serviço é registrada no sistema de logs.
 
+``
 Criação de Usuário: POST /users/
 Leitura de Todos os Usuários: GET /users/
 Leitura de um Usuário Específico: GET /users/{user_id}
 Atualização de Usuário: PUT /users/{user_id}
 Exclusão de Usuário: DELETE /users/{user_id}
+``
 
 ### Logs
 Cada ação nos serviços de usuários, eventos e mensageria gera um log no sistema de logs. Os logs são enviados para o endpoint /log com informações detalhadas sobre a operação realizada.
 
 Exemplo de Log
 
+``
 {
     "service": "user_service",
     "user_id": "1",
@@ -50,6 +55,7 @@ Exemplo de Log
     "result": "success",
     "timestamp": "2024-06-15T12:34:56.789Z"
 }
+``
 
 ## Execução do Projeto
 Para executar o projeto, siga os passos abaixo:
@@ -58,13 +64,12 @@ Para executar o projeto, siga os passos abaixo:
 - Navegue até o diretório do projeto.
 - Crie um ambiente virtual.
 - Instale as dependências necessárias.
-- Inicie os serviços de usuários.
-- Inicie o gateway.
+- Inicie os serviços pelo docker compsoe.
 - Realize operações nos serviços e verifique os logs no sistema de logs.
-
 
 ### Comandos
 
+````
 # Clonar o repositório
 git clone <https://github.com/ipatriciahonorato/modulo-10.git>
 
@@ -77,24 +82,23 @@ python -m venv venv
 # Ativar o ambiente virtual
 # No Windows
 venv\Scripts\activate
-# No Unix ou MacOS
-source venv/bin/activate
 
 # Instalar dependências
 pip install -r requirements.txt
 
 # Rodar o docker-compose
-
-docker-compose up 
+docker-compose up
 
 # Configurar e iniciar Elastic Search
 # Seguir a documentação oficial: https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started-install.html
 
 # Configurar e iniciar Kibana
 # Seguir a documentação oficial: https://www.elastic.co/guide/en/kibana/current/getting-started.html
+````
 
-
-# Vídeo Demonstrativo
+# Demonstração
 
 O vídeo abaixo apresenta o sistema em funcionamento e os logs armazenados.
+
+[![video demostrativo da solução](https://i3.ytimg.com/vi/UNGTPH-NOHw/maxresdefault.jpg)](https://youtu.be/UNGTPH-NOHw)
 
